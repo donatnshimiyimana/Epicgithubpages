@@ -1,0 +1,381 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway|Montserrat);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css);
+@mixin raleway {
+font-family: 'raleway','segoe ui', sans-serif;
+}
+
+body {
+margin:0;
+padding:0;
+@include raleway;
+}
+nav, div, header, section, footer {
+box-sizing:border-box;
+}
+
+nav {
+z-index:3;
+position: relative;
+float:left;
+width:20%;
+background:#fff;
+box-shadow: 0 1px 40px 0 #ccc;
+height:100vh;
+}
+
+nav #new {
+box-shadow: 0 1px 1px 0 #ccc;
+display: block;
+background:#FF5A60;
+padding:20px;
+padding-left:40px;
+text-align: left;
+color:#fff;
+text-decoration: none;
+font-weight: 500;
+}
+
+nav #new i {
+padding-right:15px;
+font-size:20px;
+}
+
+nav ul#menu1 {
+text-align: left;
+list-style-type: none;
+padding:0;
+margin:30px 0;
+}
+nav ul#menu1 li {
+display: block;
+}
+nav ul#menu1 li a {
+display: block;
+padding:10px 0;
+padding-left:40px;
+text-decoration: none;
+color:#777;
+position: relative;
+}
+nav ul#menu1 li a:hover {
+color:#555;
+background:#f8f8f8;
+}
+nav ul#menu1 li a.active {
+font-weight: bolder;
+}
+
+nav ul#menu1 li a span {
+background:#00B6FD;
+border-radius: 20px;
+padding:5px 8px;
+color:#fff;
+font-family: monospace;
+position:absolute;
+right:30px;
+}
+
+
+nav ul#menu2{
+list-style-type: none;
+padding:0;
+margin:40px 0;
+}
+nav ul#menu2 li {
+display: block;
+}
+nav ul#menu2 li a {
+text-decoration: none;
+color:#777;
+display: block;
+padding:10px 0;
+padding-left:40px;
+}
+
+nav ul#menu2 li a:hover {
+color:#555;
+}
+nav ul#menu2 li a:before {
+margin-right: 20px;
+content: "";
+height:10px;
+width:10px;
+display: inline-block;
+border-radius: 100%;
+}
+
+
+
+nav ul#menu2 li:nth-of-type(1) a:before {
+background:#5E99F4;
+}
+
+
+nav ul#menu2 li:nth-of-type(2) a:before {
+background:#E94434;
+}
+
+
+nav ul#menu2 li:nth-of-type(3) a:before {
+background:#FCC230;
+}
+
+
+nav ul#menu2 li:nth-of-type(4) a:before {
+background:#55AF7C;
+}
+
+
+
+
+section#listview {
+position: relative;
+z-index:2;
+float:left;
+box-shadow: 0 1px 1px 0 #ccc;
+width:35%;
+height:100vh;
+}
+
+section#listview header {
+box-shadow: 0 1px 1px 0 #eee;
+min-height: 65px;
+max-height: 65px;
+width:100%;
+}
+section#listview header input {
+width:78%;
+box-sizing:border-box;
+padding: 18px;
+font-size: 20px;
+border:none;
+}
+section#listview header input::-webkit-input-placeholder {
+color:#777;
+font-family: 'montserrat';
+}
+
+section#listview header button {
+background:#fff;
+border: none;
+box-sizing:border-box;
+width:20%;
+padding:15px 10px;
+font-size:30px;
+}
+
+section#listview header button:hover {
+background: #f8f8f8;
+}
+
+
+section#listview header input:focus, button:focus {
+outline: none;
+}
+
+
+
+section#listview div#content {
+overflow-y: scroll;
+height:90vh;
+}
+
+section#listview div#content div.item {
+position: relative;
+box-shadow:0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+section#listview div#content div.item .active {
+
+}
+section#listview div#content div.item::after {
+content:"";
+display: block;
+width:50%;
+height:3px;
+background: transparent;
+box-shadow: 0 2px 1px 0 #FF5A60;
+}
+
+section#listview div#content div.item span.avatar {
+position: absolute;
+width:60px;
+height: 60px;
+background:#ccc;
+margin-left:20px;
+margin-top:40px;
+display: block;
+border-radius: 100%;
+}
+section#listview div#content div.item div.desc {
+padding-top:20px;
+padding-bottom: 20px;
+padding-left:20%;
+}
+section#listview div#content div.item div.desc h2 {
+margin:5px;
+color:#555;
+font-weight: 500;
+}
+section#listview div#content div.item div.desc h6 {
+color:#999;
+margin:5px;
+font-size:18px;
+font-weight: 400;
+}
+section#listview div#content div.item div.desc p {
+color:#777;
+font-weight: 400;
+font-size:14px;
+}
+
+section#listview div#content div.item span.time {
+position: absolute;
+top:30px;
+right:10px;
+color:#aaa;
+font-family: monospace;
+}
+
+
+
+section#view {
+position: relative;
+z-index:1;
+float:left;
+box-shadow: 0 1px 1px 0 #ccc;
+width:45%;
+height:100vh;
+}
+
+section#view header {
+box-shadow: 0 1px 1px 0 #eee;
+min-height: 65px;
+max-height: 65px;
+width:100%;
+position: relative;
+}
+
+
+section#view header ul {
+text-align: left;
+margin:0;
+padding: 0;
+position: relative;
+top:10px;
+}
+section#view header ul li {
+display: inline-block;
+}
+section#view header ul li button {
+display: block;
+padding:10px;
+margin:0 20px;
+border:none;
+background: none;
+}
+
+section#view header ul li button:focus {
+outline:none;
+}
+section#view header ul li button i {
+font-size:25px;
+color:#777;
+}
+
+
+section#view header span.avatar {
+width:50px;
+height:50px;
+background: #ccc;
+position: absolute;
+display: block;
+border-radius: 100%;
+top:5px;
+right:80px;
+}
+
+
+section#view div.content {
+overflow-y:scroll;
+height:90vh;
+position: relative;
+}
+
+section#view div.content div.header {
+position: relative;
+padding:0 40px;
+padding-top:20px;
+}
+section#view div.content div.header span.avatar {
+width:60px;
+height:60px;
+display: inline-block;
+background: #ccc;
+border-radius: 100%;
+margin-top: 20px;
+}
+section#view div.content div.header span.name {
+position: relative;
+top:-20px;
+left:20px;
+display: inline-block;
+font-weight:500;
+color:#666;
+}
+section#view div.content div.header span.time {
+color:#aaa;
+top:60px;
+right:30px;
+position: absolute;
+
+}
+
+
+section#view div.content div.body {
+padding:20px 40px;
+}
+
+section#view div.content div.body h1 {
+color:#444;
+}
+section#view div.content div.body b {
+color:#333;
+}
+section#view div.content div.body p{
+color:#777;
+}
+
+section#view div.content div.body hr {
+border:1px solid #ccc;
+}
+
+
+
+section#view div.content button.send {
+padding:10px 40px;
+background: #FF5A60;
+border:none;
+color:#fff;
+font-family: 'montserrat';
+position: absolute;
+bottom:0;
+left:10%;
+}
+
+section#view div.content button.send a {
+    text-decoration: none;
+    color: #fff;
+}
+
+hr.clearfix {
+visibility: hidden;
+clear:both;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width:620px) {
+    section#view, section#listview, nav {
+        width: 100%;
+    } 
+}
