@@ -8,10 +8,9 @@
     background: #e9eaea;
     font-family: 'Roboto', sans-serif;
     user-select: none;
-    background: url("../assets/images/epicmail.jpg");
+    background: url("../assets/images/mailpic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-  
   }
 
   header{
