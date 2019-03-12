@@ -1,41 +1,51 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Welcome to Epic Mail</title>
-	<link rel="stylesheet" href="">
-	<link rel="stylesheet" href="../css/style4.css">
-	<script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
-	<link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet">
+
+	<!-- EPICmail css link
+    ================================================== -->
+	<link rel="stylesheet" href="../assets/css/dashboard.css">
 
 	<!-- EPICmail icons
     ================================================== -->
     <link rel="icon" href="../assets/images/epicmail.jpg">
 </head>
 <body>
+
+	<!-- EPICmail Navigation
+    ================================================== -->
 	<nav>
-		<a href="index1.html" id="new">
+		<a href="newmsg.html" id="new">
 			<i class="icon ion-ios-compose-outline"></i>
 			New Message
 		</a>
 		<ul id="menu1">
-			<li><a href="index1.html" class="active">Inbox <span>25</span></a></li>
-			<li><a href="index2.html">Starred</a></li>
-			<li><a href="index3.html">Important</a></li>
-			<li><a href="index4.html">Sent</a></li>
-			<li><a href="index3.html">Draft</a></li>
-			<li><a href="index2.html">Trash</a></li>
-			<li><a href="">Spam</a></li>
+			<li><a href="dashboard.html">Inbox <span>25</span></a></li>
+			<li><a href="stared.html">Starred</a></li>
+			<li><a href="#" class="active">Important</a></li>
+			<li><a href="sent.html">Sent</a></li>
+			<li><a href="draft.html">Draft</a></li>
+			<li><a href="#">Trash</a></li>
+			<li><a href="#">Spam</a></li>
 		</ul>
 
 		<ul id="menu2">
-			<li><a href="">Personal</a></li>
-			<li><a href="">Works</a></li>
-			<li><a href="">Friends</a></li>
-			<li><a href="">Categories</a></li>
-			<i class="icon ion-ios-compose-outline"></i>
+			<li><a href="#">New Group</a></li>
+			<li><a href="#">Upload Profile Photo</a></li>
+			<li><a href="#">Works</a></li>
+			<li><a href="#">Friends</a></li>
 		</ul>
-	</nav>
+		<ul id="menu3">
+			<li><a href="landing.html">Log Out</a></li>
+				
+		</ul>
+	</nav> <!--End of navigation-->
 
+	<!-- EPICmail section for messages
+    ================================================== -->
 	<section id="listview">
 		<header>
 			<input type="text" placeholder="Search">
@@ -47,7 +57,7 @@
 			<div class="item active">
 				<span class="avatar"></span>
 				<div class="desc">
-					<h2>NSHIMIYIMANA Donat</h2>
+					<h2>NANA Didas</h2>
 					<h6>Chief Technology Officer & Fullstack Programmer</6>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sequi nam libero temporibus, saepe quas ut cum possimus placeat aliquid, nostrum ducimus incidunt? Sit optio non vitae, adipisci nam!</p>
 				</div>
@@ -83,8 +93,9 @@
 		</div>	
 	</section>
 
-
-	<section id="view">
+	<!-- Section Part for displaying message
+    ================================================== -->
+	<section id="view" class="view">
 		<header>
 			<ul>
 				<li>
@@ -117,32 +128,31 @@
 						<i class="icon ion-ios-more-outline"></i>
 					</button>
 				</li>
+				<li>
+                    <a href=""><span class="avatar"></span></a>
+				</li>
+			
 			</ul>
 
-			<span class="avatar">
 			
-			</span>
 		</header>
-		<div class="content">
-			<div class="header">
-				<span class="avatar"></span>
-				<span class="name">ISHIMWE Sadiki | Reakestate manager</span>
-				<span class="time">February 27, 2019</span>
-			</div>
-
+		<div class="content">			
 			<div class="body">
-				<h1>Design Upwork, Design Challenge</h1>
+				<h1>Lorem ipsum dolor sit amet</h1>
 
-				<p><b>Dear Friend,</b></p>
+				<p><b>Lorem ipsum</b></p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa distinctio aspernatur earum labore nulla, nesciunt at dolorum ipsam dolores, ut illum. Esse doloribus iusto praesentium, recusandae illum eum fuga iste.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem in repellat ducimus, voluptatibus veniam. Expedita ex nostrum eligendi itaque vitae porro, officiis dolore sapiente! Quia non autem dolorem architecto totam.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia et iste omnis eveniet nihil quo, fuga consequatur. Illum nemo pariatur, dignissimos omnis obcaecati labore quam atque eius, voluptate. Porro, quas.</p>
 				<hr>
 			</div>
 
-			<button class="send">SEND</button>
 		</div>
 	</section>
+
+	<!--Javascript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../assets/js/dashboard.js"></script>
 
 </body>
 </html>

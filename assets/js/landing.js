@@ -18,7 +18,10 @@
         });
 
         $(".btn").click(function(){
-          $(".input").val("");
+          $(".signup-form").hide();
+          $(".login-form").show();
+          $(".signup").css("background", "none");
+          $(".login").css("background", "#fff");
         });
       });
 })(jQuery);

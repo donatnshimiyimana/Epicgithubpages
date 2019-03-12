@@ -1,0 +1,64 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Welcome to Epic Mail</title>
+		<link rel="stylesheet" href="../assets/css/newmsg.css">
+
+		<!-- EPICmail icons
+			================================================== -->
+			<link rel="icon" href="../assets/images/epicmail.jpg">
+	</head>
+	<body>
+		<nav>
+			<a href="newmsg.html" id="new">
+				<i class="icon ion-ios-compose-outline"></i>
+				New Message
+			</a>
+			<ul id="menu1">
+				<li><a href="dashboard.html" class="active">Inbox <span>25</span></a></li>
+				<li><a href="stared.html">Starred</a></li>
+				<li><a href="important.html">Important</a></li>
+				<li><a href="sent.html">Sent</a></li>
+				<li><a href="draft.html">Draft</a></li>
+				<li><a href="#">Trash</a></li>
+				<li><a href="#">Spam</a></li>
+			</ul>
+
+			<ul id="menu2">
+				<li><a href="#">Personal</a></li>
+				<li><a href="#">Works</a></li>
+				<li><a href="#">Friends</a></li>
+				<li><a href="#">Categories</a></li>
+			</ul>
+		</nav>
+
+		<section>
+			<div class="compose-email">
+				<div class="title">
+					SEND A NEW MESSAGE
+				</div>
+				<div class="box-body">
+					<div class="input-fields">
+						<input type="email" class="form-control" placeholder="To:" autofocus>
+					</div>
+					<div class="input-fields">
+						<input type="text" class="form-control" placeholder="Subject:">
+					</div>
+					<div class="input-fields">
+							<textarea id="compose-textarea" class="form-control" style="height: 300px" placeholder="Message:"></textarea>
+					</div>
+					<div class="box-footer">
+						<div class="pull-right">
+							<button type="button" class="draft-btn" id="draft-btn"><i class="fa fa-pencil"></i> Draft</button>
+							<button type="submit" class="send-btn" id="send-btn"><i class="fa fa-envelope-o"></i> Send</button>
+						</div>
+						<button type="reset" class="discard-btn" id="discard-btn"><i class="fa fa-times"></i> Discard</button>
+						</div>
+					</div>
+			</div>
+		</section>
+
+	</body>
+</html>

@@ -8,67 +8,16 @@
     background: #e9eaea;
     font-family: 'Roboto', sans-serif;
     user-select: none;
-    background: url("../assets/images/background.jpg");
+    background: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   
   }
 
-  header{
-    padding: 20px;
-    background-color: #34b3a0;
-  }
-
-  header h1{
-    float: left;
-    color:rgb(255, 63, 63);
-    width: 25%;
-    margin-top: 0px;
-  }
-
-  nav{
-    font-family: 'Roboto', sans-serif;
-
-}
-  nav  li{
-    display: inline-block;
-    margin-right: 15px;
-    padding:3px;
-
-}
-  nav li a{
-  text-decoration: none;
-  color: white;
-  float: right;
- 
-}
-  
   .container{
     width: 450px;
     margin: 30px auto;
-  }
-  
-  .signup,
-  .login{
-    width: 50%;
-    background: #fff;
-    float: left;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    cursor: pointer;
-    text-transform: uppercase;
-    color: #34b3a0;
-  }
-  
-  .signup-form,
-  .login-form{
-    background: #fff;
-    padding: 40px;
-    clear: both;
-    width: 100%;
-    box-sizing: border-box;
-    height: 400px;
+    padding-top: 130px;
   }
   
   .input{
@@ -108,15 +57,6 @@
 
   .btn a:hover{
     color: #3e3e40;
-  }
-  
-  span a{
-    text-decoration: none;
-    color: #000;
-  }
-
-  span a:hover{
-    color: #34b3a0;
   }
   
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */

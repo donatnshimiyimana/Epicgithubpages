@@ -1,14 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway|Montserrat);
-
-@mixin raleway {
-font-family: 'raleway','segoe ui', sans-serif;
-}
+@import url(https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css);
 
 body {
 margin:0;
 padding:0;
-@include raleway;
+font: bold;
 }
+
 nav, div, header, section, footer {
 box-sizing:border-box;
 }
@@ -59,10 +56,14 @@ position: relative;
 }
 nav ul#menu1 li a:hover {
 color:#555;
+border-left: 5px solid #34b3a0;
 background:#f8f8f8;
 }
 nav ul#menu1 li a.active {
-font-weight: bolder;
+    background:#00B6FD;
+    font-weight: bolder;
+    color: #f8f8f8;
+    border-left: 5px solid #03332c;
 }
 
 nav ul#menu1 li a span {
@@ -74,7 +75,6 @@ font-family: monospace;
 position:absolute;
 right:30px;
 }
-
 
 nav ul#menu2{
 list-style-type: none;
@@ -104,8 +104,6 @@ display: inline-block;
 border-radius: 100%;
 }
 
-
-
 nav ul#menu2 li:nth-of-type(1) a:before {
 background:#5E99F4;
 }
@@ -125,7 +123,40 @@ nav ul#menu2 li:nth-of-type(4) a:before {
 background:#55AF7C;
 }
 
+nav ul#menu3 {
+text-align: left;
+list-style-type: none;
+padding:0;
+margin:30px 0;
+}
+nav ul#menu3 li {
+display: block;
+}
+nav ul#menu3 li a {
+display: block;
+padding:10px 0;
+padding-left:40px;
+text-decoration: none;
+color:#777;
+position: relative;
+}
+nav ul#menu3 li a:hover {
+color:#555;
+background:#f8f8f8;
+}
+nav ul#menu3 li a.active {
+font-weight: bolder;
+}
 
+nav ul#menu3 li a span {
+background:#00B6FD;
+border-radius: 20px;
+padding:5px 8px;
+color:#fff;
+font-family: monospace;
+position:absolute;
+right:30px;
+}
 
 
 section#listview {
@@ -160,7 +191,7 @@ background:#fff;
 border: none;
 box-sizing:border-box;
 width:20%;
-padding:15px 10px;
+padding:17px 10px;
 font-size:30px;
 }
 
@@ -173,8 +204,6 @@ section#listview header input:focus, button:focus {
 outline: none;
 }
 
-
-
 section#listview div#content {
 overflow-y: scroll;
 height:90vh;
@@ -185,9 +214,6 @@ position: relative;
 box-shadow:0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-section#listview div#content div.item .active {
-
-}
 section#listview div#content div.item::after {
 content:"";
 display: block;
@@ -211,6 +237,7 @@ section#listview div#content div.item div.desc {
 padding-top:20px;
 padding-bottom: 20px;
 padding-left:20%;
+cursor: pointer;
 }
 section#listview div#content div.item div.desc h2 {
 margin:5px;
@@ -350,8 +377,6 @@ section#view div.content div.body hr {
 border:1px solid #ccc;
 }
 
-
-
 section#view div.content button.send {
 padding:10px 40px;
 background: #FF5A60;
@@ -361,6 +386,11 @@ font-family: 'montserrat';
 position: absolute;
 bottom:0;
 left:10%;
+}
+
+section#view div.content button.send a {
+    text-decoration: none;
+    color: #fff;
 }
 
 hr.clearfix {
