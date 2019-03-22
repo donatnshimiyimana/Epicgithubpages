@@ -67,7 +67,7 @@ nav ul#menu1 li a.active {
 }
 
 nav ul#menu1 li a span {
-background:#00B6FD;
+background:rgb(253, 0, 0);
 border-radius: 20px;
 padding:5px 8px;
 color:#fff;

@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome to Epic Mail</title>
+
+	<!-- EPICmail css link
+    ================================================== -->
+	<link rel="stylesheet" href="../assets/css/dashboard.css">
+
+	<!-- EPICmail icons
+    ================================================== -->
+    <link rel="icon" href="../assets/images/epicmail.jpg">
+</head>
+<body>
+
+	<!-- EPICmail Navigation
+    ================================================== -->
+	<nav>
+		<a href="newmsg.html" id="new">
+			<i class="icon ion-ios-compose-outline"></i>
+			New Message
+		</a>
+		<ul id="menu1">
+			<li><a href="#" class="active">Inbox <span>25</span></a></li>
+			<li><a href="stared.html">Starred</a></li>
+			<li><a href="important.html">Important</a></li>
+			<li><a href="sent.html">Sent</a></li>
+			<li><a href="draft.html">Draft</a></li>
+			<li><a href="#">Trash</a></li>
+			<li><a href="#">Spam</a></li>
+		</ul>
+
+		<ul id="menu2">
+			<li><a href="creategroup.html">New Group</a></li>
+			<li><a href="dashboard.html">Groups</a></li>
+			<li><a href="#">Upload Profile Photo</a></li>
+		</ul>
+		<ul id="menu3">
+			<li><a href="landing.html">Log Out</a></li>
+				
+		</ul>
+	</nav> <!--End of navigation-->
+
+	<!-- EPICmail section for messages
+    ================================================== -->
+	<section id="listview">
+		<header>
+			<input type="text" placeholder="Search">
+			<button>
+				<i class="icon ion-ios-search"></i>
+			</button>
+		</header>
+		<div id="content">
+			<div class="item active">
+				<span class="avatar"></span>
+				<div class="desc">
+					<h2>NSHIMIYIMANA Donat</h2>
+					<h6>Chief Technology Officer & Fullstack Programmer</6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sequi nam libero temporibus, saepe quas ut cum possimus placeat aliquid, nostrum ducimus incidunt? Sit optio non vitae, adipisci nam!</p>
+				</div>
+				<span class="time">12:00 PM</span>
+			</div>
+			<div class="item">
+				<span class="avatar"></span>
+				<div class="desc">
+					<h2>MUKAMUTARA Ruth</h2>
+					<h6>Frontend Programmer & UI / UX Implement</6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sequi nam libero temporibus, saepe quas ut cum possimus placeat aliquid, nostrum ducimus incidunt? Sit optio non vitae, adipisci nam!</p>
+				</div>
+				<span class="time">08:00 AM</span>
+			</div>
+			<div class="item">
+				<span class="avatar"></span>
+				<div class="desc">
+					<h2>UWERA Rachel</h2>
+					<h6>Backend Programmer & Database Analys</6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sequi nam libero temporibus, saepe quas ut cum possimus placeat aliquid, nostrum ducimus incidunt? Sit optio non vitae, adipisci nam!</p>
+				</div>
+				<span class="time">11:00 AM</span>
+			</div>
+			<div class="item">
+				<span class="avatar"></span>
+				<div class="desc">
+					<h2>GASANA Herman</h2>
+					<h6>UI / UX Designer & SEO Research</6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sequi nam libero temporibus, saepe quas ut cum possimus placeat aliquid, nostrum ducimus incidunt? Sit optio non vitae, adipisci nam!</p>
+				</div>
+				<span class="time">11:00 AM</span>
+			</div>
+		</div>	
+	</section>
+
+	<!-- Section Part for displaying message
+    ================================================== -->
+	<section id="view" class="view">
+		<header>
+			<ul>
+				<li>
+					<button>
+						<i class="icon ion-arrow-return-left"></i>
+					</button>
+				</li>
+				<li>
+					<button>
+						<i class="icon ion-ios-trash-outline"></i>
+					</button>
+				</li>
+				<li>
+					<button>
+						<i class="icon ion-alert"></i>
+					</button>
+				</li>
+				<li>
+					<button>
+						<i class="icon ion-ios-arrow-right"></i>
+					</button>
+				</li>
+				<li>
+					<button>
+						<i class="icon ion-ios-arrow-left"></i>
+					</button>
+				</li>
+				<li>
+					<button>
+						<i class="icon ion-ios-more-outline"></i>
+					</button>
+				</li>
+				<li><a href=""><span class="avatar">
+						
+					</span></a>
+
+					
+							
+					
+				</li>
+			
+			</ul>
+
+			
+		</header>
+		<div class="content">			
+			<div class="body">
+				<h1>Lorem ipsum dolor sit amet</h1>
+
+				<p><b>Lorem ipsum</b></p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa distinctio aspernatur earum labore nulla, nesciunt at dolorum ipsam dolores, ut illum. Esse doloribus iusto praesentium, recusandae illum eum fuga iste.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem in repellat ducimus, voluptatibus veniam. Expedita ex nostrum eligendi itaque vitae porro, officiis dolore sapiente! Quia non autem dolorem architecto totam.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia et iste omnis eveniet nihil quo, fuga consequatur. Illum nemo pariatur, dignissimos omnis obcaecati labore quam atque eius, voluptate. Porro, quas.</p>
+				<hr>
+			</div>
+
+		</div>
+	</section>
+
+	<!--Javascript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../assets/js/inbox.js"></script>
+
+</body>
+</html>
